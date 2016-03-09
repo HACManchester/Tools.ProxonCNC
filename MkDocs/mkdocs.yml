@@ -1,0 +1,17 @@
+site_name: Gentoo on the Raspberry Pi
+pages:
+- Home: index.md
+#- Circuit:
+#    - Circuit Diagram: Boot\Kernel Building.md
+
+theme: slate
+#theme: alabaster
+#theme: readthedocs
+#theme: mkdocs
+
+markdown_extensions:
+    - smarty
+
+extra_css:
+    - css/highlight-fix.css
+    - css/highlight-custom.css
