@@ -1,8 +1,11 @@
-site_name: Gentoo on the Raspberry Pi
+site_name: Manchester HacSpace - Proxon MF70
 pages:
 - Home: index.md
-#- Circuit:
-#    - Circuit Diagram: Boot\Kernel Building.md
+- Sub Pages:
+    - Auto Leveling: AutoLeveling.md
+    - Control Board: ControlBoard.md
+    - Milling: Milling.md
+    - Circuit Diagrams: CircuitDiagrams.md
 
 theme: slate
 #theme: alabaster
