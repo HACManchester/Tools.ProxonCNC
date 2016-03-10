@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Manchester HacSpace - Proxon MF70\n\n\nThis is the project page for the Proxxon MF70 Mill that has been adapted into a small scale CNC Mill for use with\nPCB Milling.\n\n\nOriginally this device was a manual mill, but stepper drivers have been attached to all the axis to change it into a CNC.\n\n\n\n\nOutstanding things to look at\n\n\n\n\nAuto Leveling of Z Axis\n\n\nRedo the breakout / control board using a Arm Due\n\n\n\n\nMilling Docs\n\n\nAt some point someone may want to incorperate these into the Manchester Hacspace wiki\nFor now I\nve included them here as it\ns easier to copy and paste.\n\n\n\n\nMilling", 
+            "text": "Manchester HacSpace - Proxon MF70\n\n\nThis is the project page for the Proxxon MF70 Mill that has been adapted into a small scale CNC Mill for use with\nPCB Milling.\n\n\nOriginally this device was a manual mill, but stepper drivers have been attached to all the axis to change it into a CNC.\n\n\n\n\nOutstanding things to look at\n\n\n\n\nAuto Leveling of Z Axis\n\n\nRedo the breakout / control board using a Arm Due\n\n\nAttach a Rpi3 to the back of the monitor and use this to control the CNC, look into 3D Acceleration and a web browser with webgl for Chillipepr\n\n\n\n\nMilling Docs\n\n\nAt some point someone may want to incorperate these into the Manchester Hacspace wiki\nFor now I\nve included them here as it\ns easier to copy and paste.\n\n\n\n\nMilling", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#outstanding-things-to-look-at", 
-            "text": "Auto Leveling of Z Axis  Redo the breakout / control board using a Arm Due", 
+            "text": "Auto Leveling of Z Axis  Redo the breakout / control board using a Arm Due  Attach a Rpi3 to the back of the monitor and use this to control the CNC, look into 3D Acceleration and a web browser with webgl for Chillipepr", 
             "title": "Outstanding things to look at"
         }, 
         {
