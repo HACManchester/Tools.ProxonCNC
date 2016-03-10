@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Polulu_Module
+D Pololu DIP Module Stepper Driver
+K pololu
+$ENDCMP
+#
+$CMP uSD_Card
+D Pololu DIP Module Stepper Driver
+K pololu
+$ENDCMP
+#
+#End Doc Library

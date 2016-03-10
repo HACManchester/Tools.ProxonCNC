@@ -1,0 +1,29 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 24LC256
+D Pololu DIP Module Stepper Driver
+K pololu
+$ENDCMP
+#
+$CMP ARDUINO_DUE_SHIELD_LAYOUT
+D Original by nicholasclewis
+K Arduino
+F http://www.thingiverse.com/thing:9630
+$ENDCMP
+#
+$CMP DIP_Switch_SPST_x3
+D DIP Switch SPST x3
+K switch
+$ENDCMP
+#
+$CMP LT1933
+D Pololu DIP Module Stepper Driver
+K pololu
+$ENDCMP
+#
+$CMP TXB0106
+D Pololu DIP Module Stepper Driver
+K pololu
+$ENDCMP
+#
+#End Doc Library
