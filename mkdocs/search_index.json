@@ -1,0 +1,99 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Manchester HacSpace - Proxon MF70\n\n\nThis is the project page for the Proxxon MF70 Mill that has been adapted into a small scale CNC Mill for use with\nPCB Milling.\n\n\nOriginally this device was a manual mill, but stepper drivers have been attached to all the axis to change it into a CNC.\n\n\n\n\nOutstanding things to look at\n\n\n\n\nAuto Leveling of Z Axis\n\n\nRedo the breakout / control board using a Arm Due\n\n\n\n\nMilling Docs\n\n\nAt some point someone may want to incorperate these into the Manchester Hacspace wiki\nFor now I\nve included them here as it\ns easier to copy and paste.\n\n\n\n\nMilling", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#manchester-hacspace-proxon-mf70", 
+            "text": "This is the project page for the Proxxon MF70 Mill that has been adapted into a small scale CNC Mill for use with\nPCB Milling.  Originally this device was a manual mill, but stepper drivers have been attached to all the axis to change it into a CNC.", 
+            "title": "Manchester HacSpace - Proxon MF70"
+        }, 
+        {
+            "location": "/#outstanding-things-to-look-at", 
+            "text": "Auto Leveling of Z Axis  Redo the breakout / control board using a Arm Due", 
+            "title": "Outstanding things to look at"
+        }, 
+        {
+            "location": "/#milling-docs", 
+            "text": "At some point someone may want to incorperate these into the Manchester Hacspace wiki\nFor now I ve included them here as it s easier to copy and paste.   Milling", 
+            "title": "Milling Docs"
+        }, 
+        {
+            "location": "/AutoLeveling/", 
+            "text": "Auto Leveling\n\n\nOverview\n\n\nOne of the main problems currently with the setup of the Proxxon mill, when it comes to milling copper boards for pcb\ns\nis auto leveliing. Typically copper boards are not perfectly level, so it\ns quite easy to over compensate and mill too\nfar down into the copper to get all the way through. Milling too far through results in boards that look fairly rubbish.\n\n\nThe way around this is to attach a inductive proximity sensor to the end of the mill. Using the sensor then sweep the board\nand get a very detailed height map of the copper board to figure out it\ns imperfections / warps in the height of the board.\n\n\nWith this height map it\ns then possible to create a series of G-Codes which as well as moving along the X and Y Axis\nalso move along the Z Axis to compensate for fluctations in the height of the board.\n\n\nChillipepr\n\n\nThere are several ways to handle auto leveling from a software point of view\nChillipepr which is a web based CNC control software, has support for auto leveling now built in.\n\n\n\n\n\n\n\n\nTODO\n\n\nAdd other PCB Software Options to try here", 
+            "title": "Auto Leveling"
+        }, 
+        {
+            "location": "/AutoLeveling/#auto-leveling", 
+            "text": "", 
+            "title": "Auto Leveling"
+        }, 
+        {
+            "location": "/AutoLeveling/#overview", 
+            "text": "One of the main problems currently with the setup of the Proxxon mill, when it comes to milling copper boards for pcb s\nis auto leveliing. Typically copper boards are not perfectly level, so it s quite easy to over compensate and mill too\nfar down into the copper to get all the way through. Milling too far through results in boards that look fairly rubbish.  The way around this is to attach a inductive proximity sensor to the end of the mill. Using the sensor then sweep the board\nand get a very detailed height map of the copper board to figure out it s imperfections / warps in the height of the board.  With this height map it s then possible to create a series of G-Codes which as well as moving along the X and Y Axis\nalso move along the Z Axis to compensate for fluctations in the height of the board.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/AutoLeveling/#chillipepr", 
+            "text": "There are several ways to handle auto leveling from a software point of view\nChillipepr which is a web based CNC control software, has support for auto leveling now built in.", 
+            "title": "Chillipepr"
+        }, 
+        {
+            "location": "/AutoLeveling/#todo", 
+            "text": "Add other PCB Software Options to try here", 
+            "title": "TODO"
+        }, 
+        {
+            "location": "/ControlBoard/", 
+            "text": "Control Board\n\n\nOverview\n\n\nAt the moment we have a series of 3 Stepper motors connected to 3 Polulu modules via a break outboard to an Arduino.\nThis system uses Gerbel on the Arduino for the firmware\n\n\n\n\nArduino - Replace with Arm Due (Bob mentioned he has a badge with the processor on we can use)\n\n\nStepper Motors / Polulu Modules - Keep these for re-use\n\n\nBreakout Board - Replace with a custom breakout board including a driver / opto decoupler for the inductive sensor\n\n\nGerbel -\n Replace this with the TinyG firmware (accepts G-Code)\n\n\n\n\nTODO\n\n\n\n\nAdd in circuit diagram of existing break out board\n\n\nInstructions for compiling TinyG\n\n\nNew breakout board circuit", 
+            "title": "Control Board"
+        }, 
+        {
+            "location": "/ControlBoard/#control-board", 
+            "text": "", 
+            "title": "Control Board"
+        }, 
+        {
+            "location": "/ControlBoard/#overview", 
+            "text": "At the moment we have a series of 3 Stepper motors connected to 3 Polulu modules via a break outboard to an Arduino.\nThis system uses Gerbel on the Arduino for the firmware   Arduino - Replace with Arm Due (Bob mentioned he has a badge with the processor on we can use)  Stepper Motors / Polulu Modules - Keep these for re-use  Breakout Board - Replace with a custom breakout board including a driver / opto decoupler for the inductive sensor  Gerbel -  Replace this with the TinyG firmware (accepts G-Code)", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/ControlBoard/#todo", 
+            "text": "Add in circuit diagram of existing break out board  Instructions for compiling TinyG  New breakout board circuit", 
+            "title": "TODO"
+        }, 
+        {
+            "location": "/Milling/", 
+            "text": "Milling\n\n\nOverview\n\n\nWe need to experiment with different methods to find which is the best way of doing things\n\n\nLinks\n\n\n\n\nhttps://github.com/grbl/grbl\n\n\nhttp://martin2250.blogspot.de/2014/12/grbl-height-probing-tutorial.html\n\n\nhttps://www.youtube.com/watch?v=g7A0pnUetRY\nindex=26\nlist=PLyTBqv9bZ9zvd457iTEN4IQGFX24d2pto\n\n\n\n\nhttp://hackaday.com/2013/12/23/software-advice-for-anyone-thinking-about-a-cnc-router/\n\n\n\n\n\n\nhttp://hackaday.com/2013/08/16/101459/", 
+            "title": "Milling"
+        }, 
+        {
+            "location": "/Milling/#milling", 
+            "text": "", 
+            "title": "Milling"
+        }, 
+        {
+            "location": "/Milling/#overview", 
+            "text": "We need to experiment with different methods to find which is the best way of doing things", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/Milling/#links", 
+            "text": "https://github.com/grbl/grbl  http://martin2250.blogspot.de/2014/12/grbl-height-probing-tutorial.html  https://www.youtube.com/watch?v=g7A0pnUetRY index=26 list=PLyTBqv9bZ9zvd457iTEN4IQGFX24d2pto   http://hackaday.com/2013/12/23/software-advice-for-anyone-thinking-about-a-cnc-router/    http://hackaday.com/2013/08/16/101459/", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/CircuitDiagrams/", 
+            "text": "Circuit Diagrams\n\n\nTODO", 
+            "title": "Circuit Diagrams"
+        }, 
+        {
+            "location": "/CircuitDiagrams/#circuit-diagrams", 
+            "text": "TODO", 
+            "title": "Circuit Diagrams"
+        }
+    ]
+}
