@@ -11,6 +11,7 @@ Originally this device was a manual mill, but stepper drivers have been attached
 
   * [Auto Leveling of Z Axis](AutoLeveling.md)
   * [Redo the breakout / control board using a Arm Due](ControlBoard.md)
+  * Attach a Rpi3 to the back of the monitor and use this to control the CNC, look into 3D Acceleration and a web browser with webgl for Chillipepr
 
 ## Milling Docs
 

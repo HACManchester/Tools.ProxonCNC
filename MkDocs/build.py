@@ -8,7 +8,7 @@ class MkDocsBuild(object):
 
     # Class Init
     def __init__(self):
-        self.SRCDIR = "docs"
+        self.SRCDIR = "Docs"
         self.BUILDDIR = "site"
         self.MKDOCSDIR = "./"
 
