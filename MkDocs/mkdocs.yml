@@ -1,11 +1,14 @@
 site_name: Manchester HacSpace - Proxon MF70
 pages:
 - Home: index.md
-- Sub Pages:
-    - Auto Leveling: AutoLeveling.md
-    - Control Board: ControlBoard.md
-    - Milling: Milling.md
-    - Circuit Diagrams: CircuitDiagrams.md
+- Cad:
+    - Overview: Cad/Overview.md
+    - Milling: Cad/Milling.md
+
+#- Sub Pages:
+#    - Auto Leveling: AutoLeveling.md
+#    - Control Board: ControlBoard.md
+#    - Circuit Diagrams: CircuitDiagrams.md
 
 theme: slate
 #theme: alabaster

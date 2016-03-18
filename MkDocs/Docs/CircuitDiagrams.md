@@ -1,3 +1,0 @@
-# Circuit Diagrams
-
-TODO
