@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-03-10</lastmod>
+     <lastmod>2016-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,26 +12,14 @@
     
         
     <url>
-     <loc>None/AutoLeveling/</loc>
-     <lastmod>2016-03-10</lastmod>
+     <loc>None/Cad/Overview/</loc>
+     <lastmod>2016-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/ControlBoard/</loc>
-     <lastmod>2016-03-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/Milling/</loc>
-     <lastmod>2016-03-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/CircuitDiagrams/</loc>
-     <lastmod>2016-03-10</lastmod>
+     <loc>None/Cad/Milling/</loc>
+     <lastmod>2016-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

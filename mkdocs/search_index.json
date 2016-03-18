@@ -21,79 +21,54 @@
             "title": "Milling Docs"
         }, 
         {
-            "location": "/AutoLeveling/", 
-            "text": "Auto Leveling\n\n\nOverview\n\n\nOne of the main problems currently with the setup of the Proxxon mill, when it comes to milling copper boards for pcb\ns\nis auto leveliing. Typically copper boards are not perfectly level, so it\ns quite easy to over compensate and mill too\nfar down into the copper to get all the way through. Milling too far through results in boards that look fairly rubbish.\n\n\nThe way around this is to attach a inductive proximity sensor to the end of the mill. Using the sensor then sweep the board\nand get a very detailed height map of the copper board to figure out it\ns imperfections / warps in the height of the board.\n\n\nWith this height map it\ns then possible to create a series of G-Codes which as well as moving along the X and Y Axis\nalso move along the Z Axis to compensate for fluctations in the height of the board.\n\n\nChillipepr\n\n\nThere are several ways to handle auto leveling from a software point of view\nChillipepr which is a web based CNC control software, has support for auto leveling now built in.\n\n\n\n\n\n\n\n\nTODO\n\n\nAdd other PCB Software Options to try here", 
-            "title": "Auto Leveling"
-        }, 
-        {
-            "location": "/AutoLeveling/#auto-leveling", 
-            "text": "", 
-            "title": "Auto Leveling"
-        }, 
-        {
-            "location": "/AutoLeveling/#overview", 
-            "text": "One of the main problems currently with the setup of the Proxxon mill, when it comes to milling copper boards for pcb s\nis auto leveliing. Typically copper boards are not perfectly level, so it s quite easy to over compensate and mill too\nfar down into the copper to get all the way through. Milling too far through results in boards that look fairly rubbish.  The way around this is to attach a inductive proximity sensor to the end of the mill. Using the sensor then sweep the board\nand get a very detailed height map of the copper board to figure out it s imperfections / warps in the height of the board.  With this height map it s then possible to create a series of G-Codes which as well as moving along the X and Y Axis\nalso move along the Z Axis to compensate for fluctations in the height of the board.", 
+            "location": "/Cad/Overview/", 
+            "text": "Software Overview\n\n\nOverview\n\n\nThe below flow diagram gives an overview of how the milling process works. \n\nIt looks complicated but generally it\ns a lot simpler than it looks\n\n\n\n\nDesign your part in modelling software\n\n\nTurn the part into G-Code / Toolpaths using CAM Software (think slicer for a 3D Printer, execept this generates milling paths)\n\n\nSimulate the cut using \nCAMotics\n\n\nRun the cut using \nChillipepr\n feeding in the G-Code\n\n\n\n\nSee \nMilling\n for more details\n\n\nFlow Diagram", 
             "title": "Overview"
         }, 
         {
-            "location": "/AutoLeveling/#chillipepr", 
-            "text": "There are several ways to handle auto leveling from a software point of view\nChillipepr which is a web based CNC control software, has support for auto leveling now built in.", 
+            "location": "/Cad/Overview/#software-overview", 
+            "text": "", 
+            "title": "Software Overview"
+        }, 
+        {
+            "location": "/Cad/Overview/#overview", 
+            "text": "The below flow diagram gives an overview of how the milling process works.  \nIt looks complicated but generally it s a lot simpler than it looks   Design your part in modelling software  Turn the part into G-Code / Toolpaths using CAM Software (think slicer for a 3D Printer, execept this generates milling paths)  Simulate the cut using  CAMotics  Run the cut using  Chillipepr  feeding in the G-Code   See  Milling  for more details", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/Cad/Overview/#flow-diagram", 
+            "text": "", 
+            "title": "Flow Diagram"
+        }, 
+        {
+            "location": "/Cad/Milling/", 
+            "text": "Milling\n\n\nOverview\n\n\nThere are lots of different types of software for creating the G-Code needed to perform the milling\n\n\n\n\nSolidworks is better for Parts such as brackets / wheels / solid parts\n\n\nAspire is better for surfaces such as Logo\ns / Terrain / Complex mesh surfaces / think Han Solo in carbinite.\n\n\nFor PCB\ns you can use software to convert Gerber\ns into G-Code, but Autoleveling is an important factor.\n\n\nFor the open source approach, use inkscape to define a path, and \nJSCut\n to turn it into G-Code\n\n\n\n\nCAM Software\n\n\nCAM Software does the job of turning the 3D Model into G-Code for the milling, most of the time it\ns fairly automatic.\nIt\ns similar in concept to a slicer for a 3D Printer. Usually you will have to tell it what types of milling heads you have\n(such as it\ns diameter, the clearence before hitting the chuck, the type of mill bit etc).\nThey also tend to have something called a pre-processor, usually \n\n\nChillipepr\n\n\nChillipepr is a web based piece of software that talks to the CNC over a serial port, and reads in the G-Code to perform the actual cut. \n\nIt\ns basically the final step in the milling process. Although it does have lots of cool features like manual control, reading in Eagle files and Autoleveling support. \n\nYou can proxy the serial port connection over the network, but it\ns important to make sure you don\nt have drop outs between the CNC and Chillipepr.\n\n\nLinks\n\n\n\n\nhttps://github.com/grbl/grbl\n\n\nhttp://martin2250.blogspot.de/2014/12/grbl-height-probing-tutorial.html\n\n\nhttps://www.youtube.com/watch?v=g7A0pnUetRY\nindex=26\nlist=PLyTBqv9bZ9zvd457iTEN4IQGFX24d2pto\n\n\n\n\nhttp://hackaday.com/2013/12/23/software-advice-for-anyone-thinking-about-a-cnc-router/\n\n\n\n\n\n\nhttp://hackaday.com/2013/08/16/101459/", 
+            "title": "Milling"
+        }, 
+        {
+            "location": "/Cad/Milling/#milling", 
+            "text": "", 
+            "title": "Milling"
+        }, 
+        {
+            "location": "/Cad/Milling/#overview", 
+            "text": "There are lots of different types of software for creating the G-Code needed to perform the milling   Solidworks is better for Parts such as brackets / wheels / solid parts  Aspire is better for surfaces such as Logo s / Terrain / Complex mesh surfaces / think Han Solo in carbinite.  For PCB s you can use software to convert Gerber s into G-Code, but Autoleveling is an important factor.  For the open source approach, use inkscape to define a path, and  JSCut  to turn it into G-Code", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/Cad/Milling/#cam-software", 
+            "text": "CAM Software does the job of turning the 3D Model into G-Code for the milling, most of the time it s fairly automatic.\nIt s similar in concept to a slicer for a 3D Printer. Usually you will have to tell it what types of milling heads you have\n(such as it s diameter, the clearence before hitting the chuck, the type of mill bit etc).\nThey also tend to have something called a pre-processor, usually", 
+            "title": "CAM Software"
+        }, 
+        {
+            "location": "/Cad/Milling/#chillipepr", 
+            "text": "Chillipepr is a web based piece of software that talks to the CNC over a serial port, and reads in the G-Code to perform the actual cut.  \nIt s basically the final step in the milling process. Although it does have lots of cool features like manual control, reading in Eagle files and Autoleveling support.  \nYou can proxy the serial port connection over the network, but it s important to make sure you don t have drop outs between the CNC and Chillipepr.", 
             "title": "Chillipepr"
         }, 
         {
-            "location": "/AutoLeveling/#todo", 
-            "text": "Add other PCB Software Options to try here", 
-            "title": "TODO"
-        }, 
-        {
-            "location": "/ControlBoard/", 
-            "text": "Control Board\n\n\nOverview\n\n\nAt the moment we have a series of 3 Stepper motors connected to 3 Polulu modules via a break outboard to an Arduino.\nThis system uses Gerbel on the Arduino for the firmware\n\n\n\n\nArduino - Replace with Arm Due (Bob mentioned he has a badge with the processor on we can use)\n\n\nStepper Motors / Polulu Modules - Keep these for re-use\n\n\nBreakout Board - Replace with a custom breakout board including a driver / opto decoupler for the inductive sensor\n\n\nGerbel -\n Replace this with the TinyG firmware (accepts G-Code)\n\n\n\n\nTODO\n\n\n\n\nAdd in circuit diagram of existing break out board\n\n\nInstructions for compiling TinyG\n\n\nNew breakout board circuit", 
-            "title": "Control Board"
-        }, 
-        {
-            "location": "/ControlBoard/#control-board", 
-            "text": "", 
-            "title": "Control Board"
-        }, 
-        {
-            "location": "/ControlBoard/#overview", 
-            "text": "At the moment we have a series of 3 Stepper motors connected to 3 Polulu modules via a break outboard to an Arduino.\nThis system uses Gerbel on the Arduino for the firmware   Arduino - Replace with Arm Due (Bob mentioned he has a badge with the processor on we can use)  Stepper Motors / Polulu Modules - Keep these for re-use  Breakout Board - Replace with a custom breakout board including a driver / opto decoupler for the inductive sensor  Gerbel -  Replace this with the TinyG firmware (accepts G-Code)", 
-            "title": "Overview"
-        }, 
-        {
-            "location": "/ControlBoard/#todo", 
-            "text": "Add in circuit diagram of existing break out board  Instructions for compiling TinyG  New breakout board circuit", 
-            "title": "TODO"
-        }, 
-        {
-            "location": "/Milling/", 
-            "text": "Milling\n\n\nOverview\n\n\nWe need to experiment with different methods to find which is the best way of doing things\n\n\nLinks\n\n\n\n\nhttps://github.com/grbl/grbl\n\n\nhttp://martin2250.blogspot.de/2014/12/grbl-height-probing-tutorial.html\n\n\nhttps://www.youtube.com/watch?v=g7A0pnUetRY\nindex=26\nlist=PLyTBqv9bZ9zvd457iTEN4IQGFX24d2pto\n\n\n\n\nhttp://hackaday.com/2013/12/23/software-advice-for-anyone-thinking-about-a-cnc-router/\n\n\n\n\n\n\nhttp://hackaday.com/2013/08/16/101459/", 
-            "title": "Milling"
-        }, 
-        {
-            "location": "/Milling/#milling", 
-            "text": "", 
-            "title": "Milling"
-        }, 
-        {
-            "location": "/Milling/#overview", 
-            "text": "We need to experiment with different methods to find which is the best way of doing things", 
-            "title": "Overview"
-        }, 
-        {
-            "location": "/Milling/#links", 
+            "location": "/Cad/Milling/#links", 
             "text": "https://github.com/grbl/grbl  http://martin2250.blogspot.de/2014/12/grbl-height-probing-tutorial.html  https://www.youtube.com/watch?v=g7A0pnUetRY index=26 list=PLyTBqv9bZ9zvd457iTEN4IQGFX24d2pto   http://hackaday.com/2013/12/23/software-advice-for-anyone-thinking-about-a-cnc-router/    http://hackaday.com/2013/08/16/101459/", 
             "title": "Links"
-        }, 
-        {
-            "location": "/CircuitDiagrams/", 
-            "text": "Circuit Diagrams\n\n\nTODO", 
-            "title": "Circuit Diagrams"
-        }, 
-        {
-            "location": "/CircuitDiagrams/#circuit-diagrams", 
-            "text": "TODO", 
-            "title": "Circuit Diagrams"
         }
     ]
 }

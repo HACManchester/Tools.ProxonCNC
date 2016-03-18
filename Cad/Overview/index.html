@@ -7,16 +7,16 @@
         
         
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Manchester HacSpace - Proxon MF70</title>
+	<title>Overview - Manchester HacSpace - Proxon MF70</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <link href="./css/base.css" rel="stylesheet">
-        <link href="./css/highlight-fix.css" rel="stylesheet">
-        <link href="./css/highlight-custom.css" rel="stylesheet">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/highlight-fix.css" rel="stylesheet">
+        <link href="../../css/highlight-custom.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Manchester HacSpace - Proxon MF70</a>
+            <a class="navbar-brand" href="../..">Manchester HacSpace - Proxon MF70</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -52,25 +52,25 @@
             <ul class="nav navbar-nav">
             
             
-                <li class="active">
-                    <a href=".">Home</a>
+                <li >
+                    <a href="../..">Home</a>
                 </li>
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cad <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
-<li >
-    <a href="Cad/Overview/">Overview</a>
+<li class="active">
+    <a href="./">Overview</a>
 </li>
 
                     
                         
 <li >
-    <a href="Cad/Milling/">Milling</a>
+    <a href="../Milling/">Milling</a>
 </li>
 
                     
@@ -87,13 +87,13 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="next" >
+                <li >
+                    <a rel="next" href="../..">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="Cad/Overview/">
+                    <a rel="prev" href="../Milling/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -107,34 +107,30 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#manchester-hacspace-proxon-mf70">Manchester HacSpace - Proxon MF70</a></li>
+        <li class="main active"><a href="#software-overview">Software Overview</a></li>
         
-            <li><a href="#outstanding-things-to-look-at">Outstanding things to look at</a></li>
+            <li><a href="#overview">Overview</a></li>
         
-            <li><a href="#milling-docs">Milling Docs</a></li>
+            <li><a href="#flow-diagram">Flow Diagram</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="manchester-hacspace-proxon-mf70">Manchester HacSpace - Proxon MF70</h1>
-<p>This is the project page for the Proxxon MF70 Mill that has been adapted into a small scale CNC Mill for use with
-PCB Milling.</p>
-<p>Originally this device was a manual mill, but stepper drivers have been attached to all the axis to change it into a CNC.</p>
-<p><img alt="ProxonMill" src="./images/Proxxon-MF-70.jpg" /></p>
-<h2 id="outstanding-things-to-look-at">Outstanding things to look at</h2>
+<h1 id="software-overview">Software Overview</h1>
+<h2 id="overview">Overview</h2>
+<p>The below flow diagram gives an overview of how the milling process works. <br>
+It looks complicated but generally it&rsquo;s a lot simpler than it looks</p>
 <ul>
-<li><a href="AutoLeveling.md">Auto Leveling of Z Axis</a></li>
-<li><a href="ControlBoard.md">Redo the breakout / control board using a Arm Due</a></li>
-<li>Attach a Rpi3 to the back of the monitor and use this to control the CNC, look into 3D Acceleration and a web browser with webgl for Chillipepr</li>
+<li>Design your part in modelling software</li>
+<li>Turn the part into G-Code / Toolpaths using CAM Software (think slicer for a 3D Printer, execept this generates milling paths)</li>
+<li>Simulate the cut using <a href="http://camotics.org/download.html">CAMotics</a></li>
+<li>Run the cut using <a href="http://chilipeppr.com/tinyg">Chillipepr</a> feeding in the G-Code</li>
 </ul>
-<h2 id="milling-docs">Milling Docs</h2>
-<p>At some point someone may want to incorperate these into the Manchester Hacspace wiki
-For now I&rsquo;ve included them here as it&rsquo;s easier to copy and paste.</p>
-<ul>
-<li><a href="Milling.md">Milling</a></li>
-</ul></div>
+<p>See <a href="../Milling/">Milling</a> for more details</p>
+<h2 id="flow-diagram">Flow Diagram</h2>
+<p><img alt="Flow1" src="../../images/FlowDiagrams/CNCFlow1.svg" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -143,12 +139,12 @@ For now I&rsquo;ve included them here as it&rsquo;s easier to copy and paste.</p
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
